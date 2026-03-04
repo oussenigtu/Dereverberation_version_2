@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La prémière version de déréverbération</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Comparaison des signaux</h1>
+    <p> Nous présentons ici la prémièrer version du modèle de réhaussement avec H=48 entraîné et l1 comme fonction de perte.<br> Les signaux sont de 48kHz et le temps de latence est de 48 ms. </p>
+    <div class="grid">
+        <div class="audio-player">
+            <h2>cible femme 1</h2>
+            <audio controls>
+                <source src="clear/p234_001.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-player">
+            <h2>traité femme1</h2>
+            <audio controls>
+                <source src="l1/p234_001.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-player">
+            <h2>Entré femme1 (4 canaux)</h2>
+            <div class="col">
+                <div class="row">
+            <audio controls id="ch1_1">
+            </audio>
+                </div>
+                <div class="row">
+           <audio controls id="ch1_2">
+            </audio>
+                </div>
+                <div class="row">
+            <audio controls id="ch1_3">
+            </audio>
+                </div>
+                <div class="row">
+            <audio controls id="ch1_4">
+            </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="audio-player">
+            <h2>cible femme 2</h2>
+            <audio controls>
+                <source src="clear/p234_002.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-player">
+            <h2>traité femme 2</h2>
+            <audio controls>
+                <source src="l1/p234_002.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-player">
+            <h2>entré femme 2 (4 canaux)</h2>
+            <div class="col">
+                <div class="row">
+            <audio controls id="ch2_1">
+            </audio>
+                </div>
+                <div class="row">
+           <audio controls id="ch2_2">
+            </audio>
+                </div>
+                <div class="row">
+            <audio controls id="ch2_3">
+            </audio>
+                </div>
+                <div class="row">
+            <audio controls id="ch2_4">
+            </audio>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="grid">
+        <div class="audio-player">
+            <h2>cible femme 3 (4 canaux)</h2>
+            <audio controls>
+                <source src="clear/p234_003.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-player">
+            <h2>traité femme 3</h2>
+            <audio controls>
+                <source src="l1/p234_003.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-player">
+            <h2>entré femme 3 (4 canaux)</h2>
+            <div class="col">
+                <div class="row">
+            <audio controls id="ch3_1">
+            </audio>
+                </div>
+                <div class="row">
+           <audio controls id="ch3_2">
+            </audio>
+                </div>
+                <div class="row">
+            <audio controls id="ch3_3">
+            </audio>
+                    </audio>
+                </div>
+                <div class="row">
+            <audio controls id="ch3_4">
+            </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+      <div class="grid">
+        <div class="audio-player">
+            <h2>cible homme 1</h2>
+            <audio controls>
+                <source src="clear/p237_002.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-player">
+            <h2>traité homme 1</h2>
+            <audio controls>
+                <source src="l1/p237_002.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-player">
+            <h2>entré homme 1 (4 canaux)</h2>
+            <div class="col">
+                <div class="row">
+            <audio controls id="ch4_1">
+            </audio>
+                </div>
+                <div class="row">
+           <audio controls id="ch4_2">
+            </audio>
+                </div>
+                <div class="row">
+            <audio controls id="ch4_3">
+            </audio>
+                    </audio>
+                </div>
+                <div class="row">
+            <audio controls id="ch4_4">
+            </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
